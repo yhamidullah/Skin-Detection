@@ -5,7 +5,8 @@ we first build a base of examples of "skin" and "non-skin" and let the program l
 Then we trained our program to generate a histogram of all training images, by taking the color of the skin using the space
 CIE LAB colors (A-B components only).
 For more information on the skin detection methods we used please read the following article:
-
+<b>[Vladimir Vezhnevets , Vassili Sazonov , Alla Andreeva] A Survey on Pixel-Based Skin Color Detection Techniques (2003) </b> </br>
+<b> IN PROC. GRAPHICON-2003, 
 (see section 2 on color spaces and section 3 on the construction of
 skin models)
 This work is directly inspired by this article, so feel free to read it for ideas and additional explanations for this project.
