@@ -14,7 +14,9 @@ additional explanations for doing this project.
 
 
 ## 3. Result
-
+![alt text](https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_shoush.jpg)
+![alt text](https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/shoush.jpg)
+![alt text](https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_mask_shoush.jpg)
 
 
 ## 4. How to set up
@@ -29,4 +31,4 @@ additional explanations for doing this project.
 
 
 
-## How to contribute
+## 6. How to contribute
