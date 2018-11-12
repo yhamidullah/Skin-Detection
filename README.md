@@ -19,9 +19,9 @@ This work is directly inspired by this article, so feel free to read it for idea
   <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_shoush.jpg" width="200" height="200"/></b>
 </div>
 <div>
-  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/moli.jpg" width="200" height="200"/></b>
-  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_mask_moli.jpg" width="200" height="200"/></b>
-  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_moli.jpg" width="200" height="200"/></b>
+  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/nefa.jpg" width="200" height="200"/></b>
+  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_mask_nefa.jpg" width="200" height="200"/></b>
+  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_nefa.jpg" width="200" height="200"/></b>
 </div>
 
 ## 4. How to set up
