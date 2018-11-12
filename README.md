@@ -7,9 +7,9 @@ CIE LAB colors (A-B components only).
 For more information on the skin detection methods we used please read the following article:
 ### Reference:
 <b>[Vladimir Vezhnevets , Vassili Sazonov , Alla Andreeva] A Survey on Pixel-Based Skin Color Detection Techniques (2003) </b> </br>
-<i><b> IN PROC. GRAPHICON-2003, pp. 85-92, Moscow, Russia, September 2003 </b></i>
+<i><b> IN PROC. GRAPHICON-2003, pp. 85-92, Moscow, Russia, September 2003 </b></i> </br>
 (see section 2 on color spaces and section 3 on the construction of
-skin models)
+skin models) </br>
 This work is directly inspired by this article, so feel free to read it for ideas and additional explanations for this project.
 ## 2. How does it work?
 
