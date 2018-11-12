@@ -21,4 +21,12 @@ additional explanations for doing this project.
 
 
 
-## 5. How to contribute
+## 5. How to train
+
+
+
+## 6. How to use
+
+
+
+## How to contribute
