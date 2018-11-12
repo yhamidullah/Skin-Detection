@@ -21,7 +21,7 @@ This work is directly inspired by this article, so feel free to read it for idea
 <div>
   <img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/nefa.png" width="700" height="150"/>
   <img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_mask_nefa.png" width="700" height="150"/>
-  <img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_nefa.png" width="250" height="150"/>
+  <img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_nefa.png" width="700" height="150"/>
 </div>
 
 ## 4. How to set up
