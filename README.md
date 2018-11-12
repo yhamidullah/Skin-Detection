@@ -1,6 +1,6 @@
 # Skin-Detection using Bayes and LAB Space
 ## 1. Description
-In this work, we created a skin detection using Bayes Theorem. For that,
+In this work, we created a skin detector using Bayes Theorem. For that,
 we first build a base of examples of "skin" and "non-skin" and let the program learn with it.
 Then we trained our program to generate a histogram of all training images, by taking the color of the skin using the space
 CIE LAB colors (A-B components only).
