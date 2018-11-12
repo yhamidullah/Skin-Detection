@@ -26,16 +26,16 @@ This work is directly inspired by this article, so feel free to read it for idea
   <img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_nefa.png" width="700" height="150"/>
 </div>
 
-## 4. How to set up
+## 4. How to set up ?
 
 
 
-## 5. How to train
+## 5. How to train ?
 
 
 
-## 6. How to use
+## 6. How to use ?
 
 
 
-## 6. How to contribute
+## 7. How to contribute ?
