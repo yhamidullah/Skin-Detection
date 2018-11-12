@@ -13,13 +13,10 @@ This work is directly inspired by this article, so feel free to read it for idea
 
 
 ## 3. Result
-<div align="center">
- <img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/shoush.jpg" alt="drawing" alt="" align="right" style="float:right"/>
- <img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_mask_shoush.jpg" alt="" align="left" style="float:left" />
- <div id="content" align="center"> 
-     <img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_shoush.jpg" alt="" align="center" />
- </div>
- </div>
+<img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/shoush.jpg" width="200" height="200"/>
+<img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_mask_shoush.jpg" width="200" height="200"/>
+<img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_shoush.jpg" width="200" height="200"/>
+
 
 ## 4. How to set up
 
