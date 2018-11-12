@@ -13,10 +13,16 @@ This work is directly inspired by this article, so feel free to read it for idea
 
 
 ## 3. Result
-<b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/shoush.jpg" width="200" height="200"/></b>
-<b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_mask_shoush.jpg" width="200" height="200"/></b>
-<b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_shoush.jpg" width="200" height="200"/></b>
-
+<div style="align:center">
+  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/shoush.jpg" width="200" height="200"/></b>
+  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_mask_shoush.jpg" width="200" height="200"/></b>
+  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_shoush.jpg" width="200" height="200"/></b>
+</div>
+<div>
+  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/milo.jpg" width="200" height="200"/></b>
+  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_mask_milo.jpg" width="200" height="200"/></b>
+  <b><img src="https://raw.githubusercontent.com/Jassarpc/Skin-Detection/master/detect_output_milo.jpg" width="200" height="200"/></b>
+</div>
 
 ## 4. How to set up
 
