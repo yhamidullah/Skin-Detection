@@ -11,6 +11,7 @@ from time import gmtime, strftime
 import pandas as pd
 import seaborn as sns
 import sys
+import csv
 '''
 0 > L > 100 ⇒ OpenCV range = L*255/100 (1 > L > 255)
 -127 > a > 127 ⇒ OpenCV range = a + 128 (1 > a > 255)
@@ -20,11 +21,11 @@ import sys
 DATASET_DIR = "dataset"
 INTERMEDIATE_DATAS_DIR = "intermediate_datas"
 REPORTS_DIR = "reports"
-REPORT_FILE = "reports.txt”"
+REPORT_FILE = "reports.txt"
 
 SAVED_VALUES_DIR = "saved_values"
 
-CONFIG_SAVED_FILE = "config.db"
+CONFIG_SAVED_FILE = "model"
 
 CLASS_SKIN = 'SKIN'
 CLASS_NON_SKIN = 'NON_SKIN'
@@ -55,7 +56,7 @@ DIR_TEST = DATASET_DIR+'/test'
 THRESHOLD_UPPER = 0.6
 THRESHOLD_LOWER = 0.5
 
-def train(CLASSES, EXTENSION=FILE_EXTENSION, SAVE_INTERMEDIATE_DATA=False, SHOW=False):
+def train(CLASSES, EXTENSION=FILE_EXTENSION, SAVE_INTERMEDIATE_DATA=False, SHOW=True):
 	#Welcome message
 	print('-     - ------ -     ----   ---  - _ -  ----   -----  --- ')
 	print(' - - -  |-- 	  -    |      |   | |   |  |--      |   |   |')
@@ -132,14 +133,26 @@ def train(CLASSES, EXTENSION=FILE_EXTENSION, SAVE_INTERMEDIATE_DATA=False, SHOW=
 	print('****************')
 	print('FINISHED TRAIN :'+strftime("%Y-%m-%d %H:%M:%S", gmtime()))
 	print('****************')
-	if SHOW:
-		His = [[],[]]
+	if True:
+		His = []
 		##### Histogramm normalization to get values between [0,1]
+		for k in range(0,len(HISTS)):
+			His.append([array(x) / DATA_PIX[k] for x in HISTS[k]])
 		for i in range(0,len(HISTS)):
-			His[i].append([h / DATA_PIX[len(DATA_PIX)-1] for x in HISTS[i]])
-		sns.distplot(His[0], hist=True, kde=False, bins=256);
-		plt.xlim([0,256])
-		plt.show()
+			histo_file = SAVED_VALUES_DIR+'/'+'HISTOGRAM_NORMALIZED_'+CLASSES[i]+'.csv'
+			if(not Path(histo_file).is_file()):
+				os.mknod(histo_file)
+			with open(histo_file, 'w', newline='') as myfile:
+				myfile.truncate(0)
+				wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
+				wr.writerow(His[i])
+			histo_file = SAVED_VALUES_DIR+'/'+'HISTOGRAM_'+CLASSES[i]+'.csv'
+			if(not Path(histo_file).is_file()):
+				os.mknod(histo_file)
+			with open(histo_file, 'w', newline='') as myfile:
+				myfile.truncate(0)
+				wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
+				wr.writerow(HISTS[i])
 	f = open(SAVED_VALUES_DIR+'/'+CONFIG_SAVED_FILE, "wb")
 	f.truncate(0)
 	pickler = pickle.Pickler(f)
@@ -162,7 +175,7 @@ def test(ImagePath=DIR_TEST, EXTENSION=FILE_EXTENSION,SHOW=False):
 		EVAL += test_detect(ImagePath+'/'+orig,ImagePath+'/'+mask,i)
 	print("-----------------------------")
 	rate = round((EVAL[0]/(EVAL[0]+EVAL[1])),2)
-	print("Correct : ",EVAL[0]," / ",EVAL[1])
+	print("Correct : ",EVAL[0]," / ",sum(EVAL))
 	print("Correction rate : ",rate*100,"%")
 	if(not Path(REPORTS_DIR+'/'+REPORT_FILE).is_file()):
 		os.mknod(REPORTS_DIR+'/'+REPORT_FILE)
@@ -174,7 +187,7 @@ def test(ImagePath=DIR_TEST, EXTENSION=FILE_EXTENSION,SHOW=False):
 	file.write("Classes : "+str(len(CLASSES))+"\n")
 	file.write("Image train : "+str(len([name for name in os.listdir(DIR_TRAIN) if os.path.isfile(os.path.join(DIR_TRAIN, name))]))+"\n")
 	file.write("Image test : "+str(len([name for name in os.listdir(DIR_TEST) if os.path.isfile(os.path.join(DIR_TEST, name))]))+"\n")
-	file.write("Pixel correct : "+str(EVAL[0])+" / "+str(EVAL[1])+"\n")
+	file.write("Pixel correct : "+str(EVAL[0])+" / "+str(sum(EVAL))+"\n")
 	file.write("Correction rate : "+str(rate*100)+"%\n")
 	file.write("")
 	file.write("Thank you for using HY-VISION\n")

@@ -1,11 +1,11 @@
 ******HY-VISION********
 ******REPORT FILE*******
-**Date & time 2018-11-11 19:26:41***
+**Date & time 2018-11-13 05:07:11***
 ************************
 Classes : 2
 Image train : 9
 Image test : 9
-Pixel correct : 811262 / 61521
-Correction rate : 0.93%
+Pixel correct : 811262 / 872783
+Correction rate : 93.0%
 Thank you for using HY-VISION
 By HAMIDULLAH Yasser (yasserhamidullah@gmail.com) / httsp://github.com/Jassarpc
