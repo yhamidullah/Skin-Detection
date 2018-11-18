@@ -343,6 +343,6 @@ def init():
 	else:
 		print("Usage: python3 detection.py file_name or path")
 		print(" ")
-		print("Examples| python3 detection.py /home/hamidullah/Desktop/mimi.jpg")
+		print("Examples| python3 detection.py /home/username/folder/mimi.jpg")
 		print("          python3 detection.py mimi.jpg")
 init()
